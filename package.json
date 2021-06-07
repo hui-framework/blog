@@ -1,21 +1,8 @@
 {
-  "name": "vuepress-theme-mediumish",
-  "version": "1.0.32",
-  "description": "Mediumish blog theme for VuePress",
-  "repository": {
-    "type": "git",
-    "url": "wowthemesnet/mediumish-vuepress-blog-theme"
-  },
-  "keywords": [
-    "vue",
-    "vuepress",
-    "vuepress-theme",
-    "blog-theme",
-    "blog",
-    "theme"
-  ],
+  "private": true,
+  "description": "HUI FRAMEWORK TEAM BLOG",
   "license": "MIT",
-  "author": "sal<wowthemesnet@gmail.com>",
+  "main": "index.js",
   "files": [
     "index.js",
     "styles",
@@ -24,12 +11,10 @@
     "fonts",
     "components"
   ],
-  "main": "index.js",
   "scripts": {
     "docs:build": "vuepress build docs --temp docs/.temp",
     "docs:dev": "vuepress dev docs --temp docs/.temp",
     "lint": "eslint . --ext .js,.vue",
-    "prepublishOnly": "npm run test && npm run docs:build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
     "test": "jest"
   },
   "husky": {
@@ -76,8 +61,5 @@
   },
   "peerDependencies": {
     "vuepress": "^1.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
   }
 }
