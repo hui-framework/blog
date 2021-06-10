@@ -103,6 +103,21 @@ module.exports = themeConfig => {
     ],
     ['@vuepress/blog', blogPluginOptions],
     ['smooth-scroll', enableSmoothScroll],
+    [
+      '@vssue/vuepress-plugin-vssue',
+      {
+        // 设置 `platform` 而不是 `api`
+        platform: 'github',
+
+        autoCreateIssue: true,
+
+        // 其他的 Vssue 配置
+        owner: 'hui-framework',
+        repo: 'blog',
+        clientId: '816c84240389f56f59b4',
+        clientSecret: '6773ca577e844af61f507beae64d2b36b67644bf',
+      },
+    ],
   ]
 
   /**
