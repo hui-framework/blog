@@ -2,20 +2,15 @@ module.exports = {
   title: 'HUI FRAMEWORK',
   base: '/blog/',
   description: 'HUI Framework Team Blog',
+  head: [['link', { rel: 'shortcut icon', href: '/assets/img/favicon.ico' }]],
   logo: './assets/img/logo.png',
   theme: require.resolve('../../'),
   themeConfig: {
     authors: [
       {
-        name: 'Sal',
-        avatar: '/assets/img/sal.jpg',
-        link: 'https://wowthemes.net/donate',
-        linktext: 'Follow',
-      },
-      {
-        name: 'John Doe',
-        avatar: '/assets/img/avatar.png',
-        link: 'https://bootstrapstarter.com/',
+        name: 'kawhi66',
+        avatar: '/assets/img/logo.png',
+        link: 'https://kawhi.site',
         linktext: 'Follow',
       },
     ],
