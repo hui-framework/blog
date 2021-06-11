@@ -1,6 +1,6 @@
 ## HUI Framework Team blog
 
-这是 HUI 框架团队的博客站点，基于 [vuepress](https://vuepress.vuejs.org/) 和 [vuepress-theme-mediumish](https://wowthemesnet.github.io/vuepress-theme-mediumish/) 搭建。基于 [Vssue](https://vssue.js.org/) 支持评论。
+这是 HUI 框架团队的博客站点，基于 [vuepress](https://vuepress.vuejs.org/) 和 [vuepress-theme-mediumish](https://wowthemesnet.github.io/vuepress-theme-mediumish/) 搭建，基于 [Vssue](https://vssue.js.org/) 实现评论。
 
 ### 写作指引
 
