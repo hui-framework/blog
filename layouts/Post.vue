@@ -40,7 +40,7 @@
       <div class="col-md-9">
         <Newsletter v-if="$service.email.enabled" />
         <Comment />
-        <Vssue title="Vssue" />
+        <Vssue class="mt-40" title="Vssue" />
       </div>
     </div>
 
