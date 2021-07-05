@@ -13,6 +13,12 @@ module.exports = {
         link: 'https://kawhi.site',
         linktext: 'Follow',
       },
+      {
+        name: 'Nowitzki41',
+        avatar: '/assets/img/logo.png',
+        link: '',
+        linktext: 'Follow',
+      },
     ],
     footer: {
       contact: [

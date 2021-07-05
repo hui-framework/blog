@@ -4,7 +4,7 @@ date: 2020-7-2
 tags:
   - 插件
 author: Nowitzki41
-featuredimg: '/assets/img/eslint-stylelint.png'
+featuredimg: '/blog/assets/img/eslint-stylelint.png'
 summary: 插件开发方案落地以及方案实现的一些总结
 ---
 
@@ -184,6 +184,6 @@ function stylelintFormat(existStylelintrc, lintFiles, fix) {
 
 在 `eslint` 的文档中有下面一段话：
 
-虽然 `ESLint` 被设计为在命令行上运行，但也可以通过 `Node.js API` 以编程方式使用 `ESLint`。`Node.js API` 的目的是允许插件和工具作者直接使用 `ESLint` 功能，而无需通过命令行界面。
+虽然 `eslint` 被设计为在命令行上运行，但也可以通过 `Node.js API` 以编程方式使用 `eslint`。`Node.js API` 的目的是允许插件和工具作者直接使用 `eslint` 功能，而无需通过命令行界面。
 
 脚手架开发时要打破业务开发的固有逻辑，不要思维固化，其实 `eslint` 文档中有关于插件和工具开发的说明，要认真查看官方文档。方案虽然定下来了，对于方案的具体实现也是不确定的，具体的编码实现会有很大差别，及时沟通可以尽早找出实现方案的缺点和漏洞。
