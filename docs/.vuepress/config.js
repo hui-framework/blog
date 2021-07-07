@@ -14,6 +14,12 @@ module.exports = {
         linktext: 'Follow',
       },
       {
+        name: 'alvada',
+        avatar: '/assets/img/alvada/head.jpg',
+        link: 'https://hui-framework.github.io/blog/',
+        linktext: 'Follow',
+      },
+      {
         name: 'Nowitzki41',
         avatar: '/assets/img/Nowitzki41.png',
         link: 'https://hui-framework.github.io/blog/',
