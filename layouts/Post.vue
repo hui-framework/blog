@@ -8,9 +8,9 @@
       <div class="row justify-content-center">
         <div class="col-md-8">
           <header>
-            <span class="text-muted"
-              ><PostMeta :date="$frontmatter.date"
-            /></span>
+            <span class="text-muted">
+              <PostMeta :date="$frontmatter.date" />
+            </span>
             <h1 class="article-head mt-3" itemprop="name headline">
               {{ $frontmatter.title }}
             </h1>
@@ -40,7 +40,9 @@
       <div class="col-md-9">
         <Newsletter v-if="$service.email.enabled" />
         <Comment />
-        <Vssue class="mt-40" title="Vssue" />
+        <div v-if="vssue" id="post-comments">
+          <Vssue :title="vssueTitle" :issue-id="vssueId" />
+        </div>
       </div>
     </div>
 
@@ -62,9 +64,26 @@ export default {
     Comment,
     Newsletter: () => import('@theme/components/Newsletter.vue'),
   },
+  computed: {
+    vssue() {
+      return (
+        this.$themeConfig.comments !== false &&
+        this.$frontmatter.vssue !== false &&
+        (this.vssueTitle || this.vssueId)
+      )
+    },
+    vssueTitle() {
+      return (
+        this.$frontmatter['vssue-title'] || this.$frontmatter.title || undefined
+      )
+    },
+    vssueId() {
+      return this.$frontmatter['vssue-id'] || undefined
+    },
+  },
 }
 </script>
 
 <style lang="stylus" scoped>
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap');
 </style>

@@ -6,6 +6,7 @@ tags:
 author: kawhi66
 featuredimg: 'https://img2.voc.com.cn/remote/2020/04/24/464_3d0833e8f96bde3523b1839280ef9d69eb1e5650.jpg'
 summary: 我们的博客站点开始工作
+vssue-id: 2
 ---
 
 # 楚辞·天问
