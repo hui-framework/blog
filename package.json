@@ -14,7 +14,7 @@
   "scripts": {
     "docs:build": "vuepress build docs --temp docs/.temp",
     "docs:dev": "vuepress dev docs --temp docs/.temp",
-    "lint": "eslint . --ext .js,.vue",
+    "lint": "eslint . --ext .js,.vue --fix",
     "test": "jest"
   },
   "husky": {

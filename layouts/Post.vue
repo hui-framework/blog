@@ -40,9 +40,9 @@
       <div class="col-md-9">
         <Newsletter v-if="$service.email.enabled" />
         <Comment />
-        <div v-if="vssue" id="post-comments">
+        <!-- <div v-if="vssue" id="post-comments">
           <Vssue :title="vssueTitle" :issue-id="vssueId" />
-        </div>
+        </div> -->
       </div>
     </div>
 
